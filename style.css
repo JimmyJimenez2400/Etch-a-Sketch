@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #208B9F;
+    font-family: 'Permanent Marker', cursive;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#flex-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    border: 1px solid red;
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+}
+
+.title:hover{
+    animation: bounce 1s linear;
+}
+
+@keyframes bounce {
+    20%,50%,80%,to{
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(-30px);
+    }
+    70%{
+        transform: translateY(-15px);
+    }
+    90%{
+        transform: translateY(-4px);
+    }
+}
+
+.board {
+    width: 500px;
+    height: 500px;
+    display: grid;
+    border: 2em solid #D60E00;
+    border-radius: 10px;
+}
+
+button {
+    align-items: center;
+    padding: 0 1rem;
+    text-align: center;
+    cursor: pointer;
+    border: 0;
+    border-radius: 12px;
+    font-size: 16px;
+    display: inline-block;
+    font-weight: 500;
+    line-height: 2.5;
+    outline: transparent;
+    transition: box-shadow .2s ease-in-out;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+button:not([disabled]):focus {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+button:not([disabled]):hover {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.blackBtn{
+    background-color: white;
+}
+.blackBtn:hover{
+    background-color: black;
+    color: white;
+}
+
+*/
+/* <!-- HTML !-->
+<button class="button-62" role="button">Button 62</button>
+
+/* CSS */
+/* .button-62 {
+  background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+  border: 0;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.button-62:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.button-62:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+} */

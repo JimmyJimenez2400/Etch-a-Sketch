@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+    <title>Etch-a-Sketch</title>
+</head>
+<body>
+    <div id="flex-container">
+        <div class="title"><h1>Etch-a-Sketch</h1></div>
+        <div class="mode">Mode: Coloring</div>
+        <div class="content">
+            <div class="board"></div>
+            <div class="buttons">
+                <button class="blackBtn" onclick="changeColor('black')">Black</button>
+                <button class="whiteBtn" onclick="changeColor('white')">Eraser</button>
+                <button class="randomBtn" onclick="changeColor('random')">Random</button>
+                <button class="resetBtn" onclick="resetButton()">Reset</button>
+            </div>
+            <div>
+                <input type="text" placeholder="Enter Size" value="16" onchange="changeSize(this.value)"/>
+                <button>Set Size</button>
+            </div>
+            <div class="error">Must be between 2 and 100</div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="credits">
+            <h2>Copyright by Jimmy Jimenez 2022</h2>
+        </div>
+    </footer>
+
+
+
+    
+    
+</body>
+<script src="app.js" defer></script>
+</html>
