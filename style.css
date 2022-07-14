@@ -1,7 +1,14 @@
+:root{
+    --primary-color: #208B9F;
+    --secondary-color: #441F76;
+    --button1-color:#F66B08;
+    --soft-yellow: #EBB715; 
+}
+
 * {
     margin: 0;
     padding: 0;
-    background-color: #208B9F;
+    /* background-color: #208B9F; */
     font-family: 'Permanent Marker', cursive;
 }
 body{
@@ -9,6 +16,10 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: var(--soft-yellow);
+}
+p{
+    font-size: 2rem;
 }
 #flex-container {
     height: 100vh;
@@ -16,11 +27,13 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* background-color: var(--secondary-color); */
 }
 
 .title {
-    border: 1px solid red;
+    font-size: 2rem;
     padding: 1rem 2rem;
+    color: var(--primary-color);
     margin-bottom: 1rem;
 }
 
@@ -43,6 +56,11 @@ body{
     }
 }
 
+.mode{
+    font-size: 2em;
+
+}
+
 .board {
     width: 500px;
     height: 500px;
@@ -51,15 +69,25 @@ body{
     border-radius: 10px;
 }
 
+
+.buttons{
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 1rem;
+}
+
+
 button {
     align-items: center;
+    margin: 10px 0 10px 0;
     padding: 0 1rem;
     text-align: center;
     cursor: pointer;
     border: 0;
     border-radius: 12px;
     font-size: 16px;
-    display: inline-block;
     font-weight: 500;
     line-height: 2.5;
     outline: transparent;
@@ -77,45 +105,47 @@ button:not([disabled]):hover {
     box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
 }
 
-.blackBtn{
+.blackBtn, .whiteBtn{
     background-color: white;
 }
-.blackBtn:hover{
+.blackBtn:hover, .whiteBtn:hover{
     background-color: black;
     color: white;
 }
 
-*/
-/* <!-- HTML !-->
-<button class="button-62" role="button">Button 62</button>
+.randomBtn{
+    background:linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,154,0,1) 10%, rgba(208,222,33,1) 20%, rgba(79,220,74,1) 30%, rgba(63,218,216,1) 40%, rgba(47,201,226,1) 50%, rgba(28,127,238,1) 60%, rgba(95,21,242,1) 70%, rgba(186,12,248,1) 80%, rgba(251,7,217,1) 90%, rgba(255,0,0,1) 100%);
 
-/* CSS */
-/* .button-62 {
-  background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
-  border: 0;
-  border-radius: 12px;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: inline-block;
-  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 2.5;
-  outline: transparent;
-  padding: 0 1rem;
-  text-align: center;
-  text-decoration: none;
-  transition: box-shadow .2s ease-in-out;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
 }
 
-.button-62:not([disabled]):focus {
-  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+.randomBtn:hover{
+
+
 }
 
-.button-62:not([disabled]):hover {
-  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
-} */
+footer {
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background:var(--secondary-color);
+}
+
+.error{
+    text-align: center;
+}
+
+.credits {
+    text-align: center;
+    color: var(--soft-yellow);
+    background-color: var(--secondary-color);
+}
+
+.inputSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
