@@ -15,7 +15,7 @@
 <body>
     <div id="flex-container">
         <div class="title"><h1>Etch-a-Sketch</h1></div>
-        <div class="mode">Mode: Coloring</div>
+        <div class="mode">Mode: <span>Coloring</span></div>
         <div class="content">
             <div class="board"></div>
             <div class="buttons">
@@ -24,9 +24,9 @@
                 <button class="randomBtn" onclick="changeColor('random')">Random</button>
                 <button class="resetBtn" onclick="resetButton()">Reset</button>
             </div>
-            <div>
-                <input type="text" placeholder="Enter Size" value="16" onchange="changeSize(this.value)"/>
-                <button>Set Size</button>
+            <div class="inputSection">
+                <input type="range" placeholder="Enter Size" min="2" max ="100" value="16" onchange="changeSize(this.value)" id="slider"/>
+                <p>Value: <span id="value"></span></p>
             </div>
             <div class="error">Must be between 2 and 100</div>
         </div>
